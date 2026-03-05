@@ -31,15 +31,15 @@ const dispalyLevelWord = (dataArry)=>{
         // console.log(dataObject.word, ":-", dataObject.meaning )
 
         const card = document.createElement('div');
-        card.className = "card bg-white text-black-content w-80"
+        card.className = "card bg-white text-black-content w-80 rounded-xl"
         card.innerHTML =`
-        <div class="card-body items-center text-center space-y-5">
+        <div class="card-body shadow-sm items-center text-center space-y-4">
             <h2 class="card-title text-2xl font-bold">${dataObject.word}</h2>
-            <p class="text-md font-medium">Meaning /Pronounciation</p>
+            <p class="text-lg font-medium">Meaning /Pronounciation</p>
             <h1 class="text-2xl font-semibold font-bangla">"${dataObject.meaning} / ${dataObject.pronunciation}"</h1>
          <div class="card-actions space-x-35">
-            <button class="btn btn-soft btn-info"><img src="./assets/fi-sr-info.png" alt="info of the word"></button>
-            <button class="btn btn-soft btn-info"><img src="./assets/fi-sr-volume.png" alt="sound of the word"></button>
+            <button class="btn btn-soft btn-info rounded-xl"><img src="./assets/fi-sr-info.png" alt="info of the word"></button>
+            <button class="btn btn-soft btn-info rounded-xl"><img src="./assets/fi-sr-volume.png" alt="sound of the word"></button>
          </div>
         </div>
     
@@ -69,7 +69,7 @@ const btnDiv = document.createElement('div');
 
         btnDiv.setAttribute("onclick", `loadLessonWord(${lesson.level_no}), btnOn()`)
 
-        btnDiv.innerHTML =`<img src="./assets/fa-book-open.png" alt="">Lesson -${lesson.level_no}`
+        btnDiv.innerHTML =`<img src="./assets/fa-book-open.png" alt="">Lesson ${lesson.level_no} - ${lesson.lessonName} `
 
 // append int the container by appendChild
         levelContainer.appendChild(btnDiv)
