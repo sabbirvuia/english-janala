@@ -25,6 +25,19 @@ const dispalyLevelWord = (dataArry)=>{
 
     const wordContainer = document.getElementById("word-container");
     wordContainer.innerHTML = "";
+
+    if(dataArry == 0){
+        wordContainer.innerHTML = `
+        <div class="col-span-3 text-center font-bangla space-y-5 p-3">
+            <img class="mx-auto" src="./assets/alert-error.png" alt="alart">
+            <p class="text-md text-gray-400 font-medium">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <h2 class="text-4xl font-semibold">নেক্সট Lesson এ যান</h2>
+        </div>
+        `
+
+        return;
+    }
+
     for(let dataObject of dataArry){
 
 
