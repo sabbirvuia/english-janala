@@ -36,7 +36,7 @@
   <body>
     <header class="bg-blue-50 border-b-1 border-b-gray-300">
       <div class="navbar w-10/12 mx-auto bg-blue-50 flex justify-between">
-        <div class="navbar-start space-x-[80%] md:space-x-0">
+        <div class="navbar-start  md:space-x-0">
           <div class="dropdown">
             <div
               tabindex="0"
@@ -76,7 +76,7 @@
               >
             </ul>
           </div>
-
+          <div class="hidden md:flex">
           <a class="flex items-center gap-1">
             <span class="text-lg font-bold">English</span
             ><img src="./assets/logo.png" alt="" /><span
@@ -84,9 +84,10 @@
               >জানালা</span
             >
           </a>
+          </div>
         </div>
 
-        <div class="navbar-end space-x-4 hidden lg:flex ju">
+        <div class="navbar-end space-x-4 hidden lg:flex ">
           <a class="btn btn-outline btn-primary"
             ><img src="./assets/fa-circle-question.png" alt="" />FAQ</a
           >
@@ -111,6 +112,15 @@
             />Logout</a
           >
         </div>
+                  <div class="flex md:hidden">
+          <a class="flex items-center gap-1">
+            <span class="text-lg font-bold">English</span
+            ><img src="./assets/logo.png" alt="" /><span
+              class="font-bangla text-lg font-semibold"
+              >জানালা</span
+            >
+          </a>
+          </div>
       </div>
     </header>
 
@@ -165,13 +175,15 @@
         ></div>
       </section>
 
-      <section id="loading" class="flex justify-center items-center py-5 hidden">
+      <section
+        id="loading"
+        class="hidden justify-center text-center items-center py-5"
+      >
         <span class="loading loading-bars loading-xl text-info"></span>
       </section>
 
-      <section
-        id="word-container"
-        class="grid grid-cols-1 gap-5 max-h-full rounded-xl bg-gray-100 p-8 w-11/12 items-center mx-auto my-10 md:grid-cols-2 lg:grid-cols-3 "
+      <section id="word-container"
+        class="grid grid-cols-1 gap-5 rounded-xl bg-gray-100 p-8 w-11/12 items-center mx-auto my-10 md:grid-cols-2 lg:grid-cols-3"
       >
         <div class="col-span-3 text-center font-bangla space-y-4 p-3">
           <p class="text-md text-gray-400 font-medium">
@@ -180,9 +192,91 @@
           <h2 class="text-4xl font-semibold">একটি Lesson Select করুন।</h2>
         </div>
       </section>
+
+      <section id="FAQ" class="my-50">
+        <h1 class="text-3xl font-bold text-nowrap text-center md:text-5xl mb-5">
+          <span class="text-info">Frequently</span> Asked Questions
+        </h1>
+        <div class="bg-white space-y-5 my-25">
+          <div
+            class="w-11/12 mx-auto bg-base-200 p-4 rounded-lg text-lg font-medium"
+          >
+            <div class="flex justify-between items-center">
+              <h2>1. How can I start learning English on this website?</h2>
+              <button class="btn border-none">-</button>
+            </div>
+
+            <p class="font-light">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.
+            </p>
+          </div>
+
+          <div
+            class="w-11/12 mx-auto bg-base-200 p-4 rounded-lg text-lg font-medium"
+          >
+            <div class="flex justify-between items-center">
+              <h2>2. Is this website free to use?</h2>
+              <span class="btn border-none">+</span>
+            </div>
+          </div>
+          <div
+            class="w-11/12 mx-auto bg-base-200 p-4 rounded-lg text-lg font-medium"
+          >
+            <div class="flex justify-between items-center">
+              <h2>3. Do I need to create an account?</h2>
+              <span class="btn border-none">+</span>
+            </div>
+          </div>
+          <div
+            class="w-11/12 mx-auto bg-base-200 p-4 rounded-lg text-lg font-medium"
+          >
+            <div class="flex justify-between items-center">
+              <h2>4. How can I build my English vocabulary?</h2>
+              <span class="btn border-none">+</span>
+            </div>
+          </div>
+          <div
+            class="w-11/12 mx-auto bg-base-200 p-4 rounded-lg text-lg font-medium"
+          >
+            <div class="flex justify-between items-center">
+              <h2>5. Do you offer certificates for completed courses?</h2>
+              <span class="btn border-none">+</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-
+    <footer class="w-full bg-blue-50">
+      <section class="w-11/12 mx-auto py-24">
+      <div> 
+          <a class="flex items-center gap-1">
+            <span class="text-lg font-bold">English</span
+            ><img src="./assets/logo.png" alt="" /><span
+              class="font-bangla text-lg font-semibold"
+              >জানালা</span
+            >
+          </a>
+      </div>
+      <div class="flex justify-between with w-full mt-4">
+      <div class="space-y-2">
+          <p class="font-bangla text-base font-medium ">ইংরেজি শিখুন সহজে</p>
+          <p class="text-xs font-light">Providing ED-Tech Applications since 2025</p>
+      </div>
+      <div class="space-y-2">
+        <h4 class="text-xs font-medium">FOLLOW US</h4>
+        <div class="flex justify-between gap-2">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      </div>
+      </section>
+    </footer>
     <!-- Open the modal using ID.showModal() method -->
     <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
