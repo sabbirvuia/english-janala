@@ -1,108 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Janala | Home</title>
     <!-- tailwind & dasiyUi linked -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     <!-- fontAwesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-     <!-- css link -->
-      <link rel="stylesheet" href="./styles/style.css">
-      <!-- favicon -->
-      <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-</head>
-<body>
-    <header class="bg-blue-50 border-b-1 border-b-gray-300" >
-    <div class="navbar w-10/12 mx-auto bg-blue-50 flex justify-between  ">
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
 
-          <div class="navbar-start space-x-[80%] md:space-x-0 ">
-         <div class="dropdown">
-           <div tabindex="0" role="button" class="btn btn-ghost bg-blue-50 border-none lg:hidden">
-             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-              </div>
-              <ul  tabindex="-2"  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-52 p-2 shadow hover:bg-blue-50">
-            <a class="btn bg-blue-50 hover:bg-blue-100"><img src="./assets/fa-circle-question.png" alt="">FAQ</a>
-            <a class="btn bg-blue-50 hover:bg-blue-100"><img src="./assets/fa-book-open.png" alt="">Learn</a>
-            <a class="btn bg-blue-50 hover:bg-blue-100"><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</a>
-              </ul>
+  <body>
+    <header class="bg-blue-50 border-b-1 border-b-gray-300">
+      <div class="navbar w-10/12 mx-auto bg-blue-50 flex justify-between">
+        <div class="navbar-start space-x-[80%] md:space-x-0">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost bg-blue-50 border-none lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-2"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-52 p-2 shadow hover:bg-blue-50"
+            >
+              <a class="btn bg-blue-50 hover:bg-blue-100"
+                ><img src="./assets/fa-circle-question.png" alt="" />FAQ</a
+              >
+              <a class="btn bg-blue-50 hover:bg-blue-100"
+                ><img src="./assets/fa-book-open.png" alt="" />Learn</a
+              >
+              <a class="btn bg-blue-50 hover:bg-blue-100"
+                ><img
+                  src="./assets/fa-arrow-right-from-bracket.png"
+                  alt=""
+                />Logout</a
+              >
+            </ul>
           </div>
 
-         <a class="flex items-center gap-1">
-        <span class="text-lg font-bold">English</span><img src="./assets/logo.png" alt=""><span class="font-bangla text-lg font-semibold">জানালা</span>
-         </a>
-          </div>
+          <a class="flex items-center gap-1">
+            <span class="text-lg font-bold">English</span
+            ><img src="./assets/logo.png" alt="" /><span
+              class="font-bangla text-lg font-semibold"
+              >জানালা</span
+            >
+          </a>
+        </div>
 
-          <div class="navbar-end space-x-4 hidden lg:flex ju ">
-            <a class="btn  btn-outline btn-primary "><img src="./assets/fa-circle-question.png" alt="">FAQ</a>
-            <a class="btn  btn-outline btn-primary "><img src="./assets/fa-book-open.png" alt="">Learn</a>
-            <a class="btn  btn-outline btn-primary "><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</a>
-          </div>
-          <!-- medium device setup one button on right side -->
-          <div class="navbar-end-for-md-device space-x-4 hidden md:flex justify-end lg:hidden ">
-            <a class="btn  btn-outline btn-primary "><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</a>
-          </div>
-    </div>
+        <div class="navbar-end space-x-4 hidden lg:flex ju">
+          <a class="btn btn-outline btn-primary"
+            ><img src="./assets/fa-circle-question.png" alt="" />FAQ</a
+          >
+          <a class="btn btn-outline btn-primary"
+            ><img src="./assets/fa-book-open.png" alt="" />Learn</a
+          >
+          <a class="btn btn-outline btn-primary"
+            ><img
+              src="./assets/fa-arrow-right-from-bracket.png"
+              alt=""
+            />Logout</a
+          >
+        </div>
+        <!-- medium device setup one button on right side -->
+        <div
+          class="navbar-end-for-md-device space-x-4 hidden md:flex justify-end lg:hidden"
+        >
+          <a class="btn btn-outline btn-primary"
+            ><img
+              src="./assets/fa-arrow-right-from-bracket.png"
+              alt=""
+            />Logout</a
+          >
+        </div>
+      </div>
     </header>
 
-    
+    <main>
+      <section>
+        <div class="hero min-h-screen md:my-20">
+          <div
+            class="hero-content w-10/12 mx-auto flex-col lg:flex-row-reverse justify-between p-2 m-0"
+          >
+            <img
+              src="./assets/hero-student.png"
+              class="rounded-lg md:max-w-xl"
+            />
+            <div>
+              <h1 class="text-5xl font-bold text-nowrap">
+                <span class="text-info">English</span> is Easy!!
+              </h1>
+              <p class="py-6 font-bangla text-lg font-medium">
+                আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন
+                অথবা <br />
+                আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+                <br />
+                যাবে অন্য একটি Level এ
+              </p>
+              <fieldset class="fieldset gap-5">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Enter Your Name"
+                />
 
-<main>
-   <section>
-     <div class="hero min-h-screen md:my-20 ">
-      <div class="hero-content w-10/12 mx-auto flex-col lg:flex-row-reverse justify-between p-2 m-0">
-    <img     src="./assets/hero-student.png"
-      class=" rounded-lg md:max-w-xl"
-    />
-    <div>
-      <h1 class="text-5xl font-bold text-nowrap">
-        <span class="text-info">English</span> is Easy!!</h1>
-      <p class="py-6 font-bangla text-lg font-medium ">
-        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>
-        আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br>
-        যাবে অন্য একটি Level এ
-      </p>
-        <fieldset class="fieldset gap-5">
+                <input
+                  type="password"
+                  class="input"
+                  placeholder=".............."
+                />
+              </fieldset>
+              <button class="btn btn-primary mt-4">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <input type="text" class="input" placeholder="Enter Your Name" />
-
-          <input type="password" class="input" placeholder=".............." />
-
-        </fieldset>
-        <button class="btn btn-primary mt-4">Get Started</button>
-
-    </div>
-      </div>
-     </div>
-   </section>
-
-   <section class="mt-50">
-        <h1 class="text-3xl font-bold text-nowrap text-center md:text-5xl ">
-        <span class="text-info">Let's </span>Learn Vocabularies
+      <section class="mt-50">
+        <h1 class="text-3xl font-bold text-nowrap text-center md:text-5xl">
+          <span class="text-info">Let's </span>Learn Vocabularies
         </h1>
 
-        <div id="level-container" class="flex flex-wrap justify-center gap-5  my-10 ">
-        </div
-        >
-   </section>
+        <div
+          id="level-container"
+          class="flex flex-wrap justify-center gap-5 my-10"
+        ></div>
+      </section>
 
-   <section id="word-container" class="grid grid-cols-1 gap-5 max-h-full rounded-xl bg-gray-100 p-8 w-11/12 items-center mx-auto my-10 md:grid-cols-2 lg:grid-cols-3">
+      <section id="loading" class="flex justify-center items-center py-5 hidden">
+        <span class="loading loading-bars loading-xl text-info"></span>
+      </section>
 
-    <div class="col-span-3 text-center font-bangla space-y-4 p-3">
-        <p class="text-md text-gray-400 font-medium">আপনি এখনো কোন Lesson Select করেন নাই</p>
-        <h2 class="text-4xl font-semibold">একটি Lesson Select করুন।</h2>
-    </div>
-   </section>
-</main>
-    
+      <section
+        id="word-container"
+        class="grid grid-cols-1 gap-5 max-h-full rounded-xl bg-gray-100 p-8 w-11/12 items-center mx-auto my-10 md:grid-cols-2 lg:grid-cols-3 "
+      >
+        <div class="col-span-3 text-center font-bangla space-y-4 p-3">
+          <p class="text-md text-gray-400 font-medium">
+            আপনি এখনো কোন Lesson Select করেন নাই
+          </p>
+          <h2 class="text-4xl font-semibold">একটি Lesson Select করুন।</h2>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="modal-container"></div>
+
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn btn-primary">Complete Learning</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
     <script src="./scripts/index.js"></script>
-</body>
+  </body>
 </html>
-
