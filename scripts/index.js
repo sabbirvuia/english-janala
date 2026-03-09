@@ -25,7 +25,7 @@ const loadingManager = (status) => {
 // step 3
 const loadLessonWord = (id) => {
   //  console.log(id)
-       
+
   const url = `https://openapi.programming-hero.com/api/level/${id}`;
 
   fetch(url)
@@ -38,7 +38,7 @@ const loadLessonWord = (id) => {
       const lessonBtn = document.getElementById(`lesson-btn-${id}`);
       lessonBtn.classList.add("active");
     });
-    loadingManager(true);
+  loadingManager(true);
 };
 
 // step 7
@@ -73,7 +73,6 @@ const dispalyWordDetails = (data) => {
 
   const modalBox = document.getElementById("my_modal_5");
 
-
   modalBox.showModal();
 };
 
@@ -88,11 +87,17 @@ const showWordDetails = async (id) => {
   dispalyWordDetails(details.data);
 };
 
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // Japanese
+  window.speechSynthesis.speak(utterance);
+}
+
 // step 4
 const dispalyLevelWord = (dataArry) => {
   const wordContainer = document.getElementById("word-container");
   wordContainer.innerHTML = "";
-    
+
   // step 4
   if (dataArry == 0) {
     wordContainer.innerHTML = `
@@ -127,7 +132,9 @@ const dispalyLevelWord = (dataArry) => {
         >
           <img src="./assets/fi-sr-info.png" alt="info of the word" />
         </button>
-        <button class="btn btn-soft btn-info hover:bg-blue-50 rounded-xl">
+        <button
+        onclick="pronounceWord('${dataObject.word}')"
+         class="btn btn-soft btn-info hover:bg-blue-50 rounded-xl">
           <img src="./assets/fi-sr-volume.png" alt="sound of the word" />
         </button>
       </div>
@@ -136,7 +143,7 @@ const dispalyLevelWord = (dataArry) => {
         `;
     wordContainer.appendChild(card);
   }
-      loadingManager(false);
+  loadingManager(false);
 };
 
 // step 2
@@ -161,3 +168,21 @@ const displayLesson = (lessons) => {
 };
 
 loadLessons();
+
+document.getElementById("btn-search").addEventListener("click", () => {
+  const getInputValue = document.getElementById("input-search").value;
+  const searchValue = getInputValue.trim().toLowerCase();
+  // console.log(searchValue)
+
+  fetch("https://openapi.programming-hero.com/api/words/all")
+    .then((res) => res.json())
+    .then((object) => {
+      const allWord = object.data;
+
+      // console.log(allWord)
+      const filterWords = allWord.filter((data) =>
+        data.word.toLowerCase().includes(searchValue)   
+      );
+      dispalyLevelWord(filterWords);
+    });
+});
